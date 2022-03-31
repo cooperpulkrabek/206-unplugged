@@ -87,7 +87,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* --- General Styles these below for across the board thats why putting at top ---*/
+/* --- GENERAL STYLES (these below for across the board thats why putting at top) ---*/
 
 /* global style can be overide later */
 html {
@@ -97,6 +97,7 @@ html {
 body {
   font-family: 'Open-Sans' sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
   text-align: left;
 }
 
@@ -113,6 +114,7 @@ a {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3,
@@ -120,6 +122,8 @@ h4 {
   font-family: 'Poppins', sans-serif;
   margin: 20px 0;
   font-size: 1.125em;
+  font-weight: 500;
+  margin: 20px 0;
 }
 
 p {
@@ -145,16 +149,17 @@ address {
   margin: 50px 0;
 }
 
-/* ----------------- Base Header - Footer Styles --------------------*/
+/* ----------------- BASE HEADER / FOOTER STYLES --------------------*/
 header,
 footer {
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-/* --- Header Styles ---*/
+/* --- HEADER STYLES ---*/
 
 header {
   padding: 15px 0;
@@ -169,6 +174,7 @@ header .content-wrapper {
 }
 
 .header-divider {
+  background: #3a3a3a;
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
@@ -180,6 +186,9 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  text-transform: uppercase;
+  font-size: 1.125em;
+  font-weight: 700;
 }
 
 header nav ul {
@@ -188,9 +197,10 @@ header nav ul {
   width: 100%;
 }
 
-/* --- Footer Styles ---*/
+/* --- FOOTER STYLES ---*/
 
 footer {
+  text-align: center;
   flex-direction: column;
 }
 
@@ -205,14 +215,12 @@ footer .content-wrapper {
 
 footer .contact {
   margin-bottom: 50px;
+  text-align: center;
 }
 
-address {
-
-}
-
-.social {
-
+footer .social {
+  color: #e2e3ed;
+  text-align: center;
 }
 
 footer .social-icons {
@@ -229,11 +237,12 @@ footer .social-icons p {
 
 footer .copyright {
   margin: 20px 0;
+  word-spacing: 5px;
 }
 
-/* ------------------ Mobile Styles - Homepage -----------------*/
+/* ------------------ MOBILE STYLES HOMEPAGE -----------------*/
 
-/* hero area */
+/* HERO AREA */
 
 .hero-section {
   display: flex;
@@ -241,28 +250,52 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
-/* aside */
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* ASIDE */
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-aside .content-wrapper {
+/* FORM ON HOMEPAGE */
 
+aside .form {
+  margin-top: 30px;
 }
 
-.form-description {
-
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
 }
 
-.form {
-
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-/* features */
+/* FEATURES */
 
 .features {
   display: flex;
@@ -287,6 +320,7 @@ aside .content-wrapper {
 }
 
 .features p {
+  text-align: center;
   margin: 0;
 }
 
@@ -294,9 +328,10 @@ article .features-item-description {
 
 }
 
-/* reviews */
+/* REVIEWS */
 
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -304,6 +339,7 @@ article .features-item-description {
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -315,6 +351,7 @@ article .features-item-description {
     ABOUT PAGE
    ========================================================================== */
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -322,6 +359,7 @@ article .features-item-description {
 }
 
 .contact-section {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,6 +374,7 @@ article .features-item-description {
    FAQ PAGE
    ========================================================================== */
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -352,13 +391,16 @@ article .features-item-description {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq-content {
   margin-bottom: 50px;
 }
 
-
+.faq-content h4 {
+  line-height: 1.333;
+}
 
 /* ==========================================================================
    Helper classes
