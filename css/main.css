@@ -92,7 +92,7 @@ html {
 }
 
 body {
-  font-family: 'Open-Sans' sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   color: #e2e3ed;
   text-align: left;
@@ -101,6 +101,7 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
 }
 
 a {
@@ -112,6 +113,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
@@ -138,7 +140,6 @@ figure {
 address {
   font-style: normal;
 }
-
 
 .content-wrapper {
   width: 90%;
@@ -226,10 +227,10 @@ footer .contact {
   text-align: center;
 }
 
-footer .social {
+/*footer .social {
   color: #e2e3ed;
   text-align: center;
-}
+}*/
 
 footer .social-icons {
   display: flex;
@@ -238,9 +239,17 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .social-icons p i {
+  font-size: 1.31em;
 }
 
 footer .copyright {
@@ -335,10 +344,6 @@ input[type=button] {
 .features p {
   text-align: center;
   margin: 0;
-}
-
-article .features-item-description {
-
 }
 
 .features i {
@@ -524,9 +529,8 @@ article .features-item-description {
     These examples override the primary ('mobile first') styles.
     Modify as content requires.
    ========================================================================== */
-
+   /*TABLET STYLES HERE*/
    @media only screen and (min-width: 768px) {
-  /*Tablet styles here*/
 
   /* ==========================================================================
      Homepage
@@ -635,8 +639,6 @@ article .features-item-description {
     margin: 0;
   }
 
-
-
 /* Footer */
 
   footer .content-wrapper {
@@ -666,6 +668,11 @@ article .features-item-description {
 
   footer p {
       line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
@@ -705,8 +712,6 @@ article .features-item-description {
     font-size: 1.5em;
   }
 
-
-
  /* ==========================================================================
     FAQ page
     ========================================================================== */
@@ -733,7 +738,7 @@ article .features-item-description {
 
 
 @media only screen and (min-width: 1200px) {
-  /* Desktop styles here*/
+  /* DESKTOP STYLES HERE*/
 /* ==========================================================================
   Homepage
   ======================================================================== */
@@ -747,6 +752,10 @@ article .features-item-description {
   .content-wrapper {
     max-width: 960px;
     /* margin: 175 0; */
+  }
+
+  img {
+    width: 50%;
   }
 
   h2 {
@@ -767,7 +776,7 @@ article .features-item-description {
 
   .hero-area h1 {
     font-size: 3.75em;
-    width: 60%;
+    width: 80%;
   }
 
   /* aside */
