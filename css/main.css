@@ -264,8 +264,8 @@ footer .copyright {
 
 .hero-area {
   background: url('../img/hero-img.jpg') center no-repeat;
-  background-size: 300%;
-  background-position: 50% 25%;
+  background-size: cover;
+  background-position: center;
   min-height: 500px;
   display: flex;
   justify-content: center;
@@ -586,7 +586,6 @@ input[type=button] {
 
   .hero-area {
     min-height: 600px;
-    background-size: cover;
   }
 
   .hero-area h1 {
